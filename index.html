@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mini CRM Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Mini CRM Dashboard</h1>
+        </header>
+
+        <!-- Stats Cards -->
+        <section class="stats">
+            <div class="card">
+                <h3>Total Leads</h3>
+                <p id="totalLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Contacted</h3>
+                <p id="contactedLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Converted</h3>
+                <p id="convertedLeads">0</p>
+            </div>
+        </section>
+
+        <!-- Add Lead Form -->
+        <section class="form-section">
+            <input type="text" id="name" placeholder="Enter Name" />
+            <input type="email" id="email" placeholder="Enter Email" />
+            <button onclick="addLead()">Add Lead</button>
+        </section>
+
+        <!-- Search -->
+        <section class="search-section">
+            <input type="text" id="search" placeholder="Search by name..." />
+        </section>
+
+        <!-- Leads Container -->
+        <section id="leadsContainer" class="leads-grid"></section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
